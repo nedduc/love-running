@@ -130,7 +130,7 @@ hr {
     text-align: right;
 }
 .left-about-heading p {
-    text-align: center;
+    text-align: left;
     padding: 0 20px 0 20px;
 }
 #welcome {
@@ -262,4 +262,13 @@ footer {
             text-align: center;
             padding: 0 20px;
         }
+        #photos {
+            column-count: 3;
+        }
     }
+    /* For smaller sizes and down 800px */
+    @media screen and (max-width: 800px) {
+        #photos {
+            column-count: 2;
+        }
+}
